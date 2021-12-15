@@ -1,6 +1,9 @@
 
  Presenting the homebrew menu changer!!! 
  
+ ![image](https://user-images.githubusercontent.com/63970461/146280707-103f0d66-18ec-43cc-b986-6649626aad60.png)
+
+ 
  
  -What it does 
  . walks user through changing homebrew menu theme 
@@ -24,5 +27,8 @@
  for putting up with the questions and thanks to the great NSX
  for getting me in to theming again and all his contributions to the scene.
  Thanks for everything!
+ 
+ 
+ https://www.paypal.com/cgi-bin/webscr?business=chardelycee@gmail.com&cmd=_xclick&currency_code=USD&amount=5.00&item_name=support me here!
  
  
