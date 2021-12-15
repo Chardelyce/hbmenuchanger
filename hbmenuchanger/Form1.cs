@@ -214,10 +214,37 @@ namespace hbmenuchanger
        
             ProcessStartInfo psInfo11 = new ProcessStartInfo
             {
-                FileName = " https://www.paypal.com/paypalme/kermit00",
+                FileName = "https://www.paypal.com/paypalme/kermit00",
                 UseShellExecute = true
             };
             Process.Start(psInfo11);
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void hACTOOLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo psInfo12 = new ProcessStartInfo
+            {
+                FileName = "https://github.com/Thealexbarney/LibHac/releases",
+                UseShellExecute = true
+            };
+            Process.Start(psInfo12);
+        
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo psInfo13 = new ProcessStartInfo
+            {
+                FileName = "https://github.com/Chardelyce/hbmenuchanger ",
+                UseShellExecute = true
+            };
+            Process.Start(psInfo13);
         }
     }
 }

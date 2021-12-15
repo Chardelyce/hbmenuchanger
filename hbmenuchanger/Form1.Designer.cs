@@ -50,15 +50,19 @@ namespace hbmenuchanger
             this.httpsswitchhomebrewguidedonatehtmlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.libcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.httpsgithubcomswitchbrewnxhbmenuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.hmbrewchannelEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.charUIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.paypalmekermit00ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hACTOOLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tHEMEPAKMENUFilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -72,12 +76,15 @@ namespace hbmenuchanger
             this.installSwitchHomebrewToolStripMenuItem,
             this.gBATempToolStripMenuItem,
             this.switchEmulationToolStripMenuItem,
-            this.linksToSupportAllThoseInvolvedToolStripMenuItem});
+            this.linksToSupportAllThoseInvolvedToolStripMenuItem,
+            this.hACTOOLToolStripMenuItem,
+            this.tHEMEPAKMENUFilesToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(784, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(780, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // fileToolStripMenuItem
             // 
@@ -222,15 +229,50 @@ namespace hbmenuchanger
             this.httpsgithubcomswitchbrewnxhbmenuToolStripMenuItem.Text = "https://github.com/switchbrew/nx-hbmenu";
             this.httpsgithubcomswitchbrewnxhbmenuToolStripMenuItem.Click += new System.EventHandler(this.httpsgithubcomswitchbrewnxhbmenuToolStripMenuItem_Click);
             // 
+            // hmbrewchannelEditorToolStripMenuItem
+            // 
+            this.hmbrewchannelEditorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.charUIToolStripMenuItem});
+            this.hmbrewchannelEditorToolStripMenuItem.Name = "hmbrewchannelEditorToolStripMenuItem";
+            this.hmbrewchannelEditorToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
+            this.hmbrewchannelEditorToolStripMenuItem.Text = "hmbrewchannel editor";
+            // 
+            // charUIToolStripMenuItem
+            // 
+            this.charUIToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.paypalmekermit00ToolStripMenuItem});
+            this.charUIToolStripMenuItem.Name = "charUIToolStripMenuItem";
+            this.charUIToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.charUIToolStripMenuItem.Text = "Char(UI)";
+            // 
+            // paypalmekermit00ToolStripMenuItem
+            // 
+            this.paypalmekermit00ToolStripMenuItem.Name = "paypalmekermit00ToolStripMenuItem";
+            this.paypalmekermit00ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.paypalmekermit00ToolStripMenuItem.Text = "paypal.me/kermit00";
+            this.paypalmekermit00ToolStripMenuItem.Click += new System.EventHandler(this.paypalmekermit00ToolStripMenuItem_Click);
+            // 
+            // hACTOOLToolStripMenuItem
+            // 
+            this.hACTOOLToolStripMenuItem.Name = "hACTOOLToolStripMenuItem";
+            this.hACTOOLToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.hACTOOLToolStripMenuItem.Text = "HACTOOL";
+            this.hACTOOLToolStripMenuItem.Click += new System.EventHandler(this.hACTOOLToolStripMenuItem_Click);
+            // 
+            // tHEMEPAKMENUFilesToolStripMenuItem
+            // 
+            this.tHEMEPAKMENUFilesToolStripMenuItem.Name = "tHEMEPAKMENUFilesToolStripMenuItem";
+            this.tHEMEPAKMENUFilesToolStripMenuItem.Size = new System.Drawing.Size(144, 20);
+            this.tHEMEPAKMENUFilesToolStripMenuItem.Text = "THEMEPAK/ MENU files";
+            // 
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton4});
+            this.toolStripButton2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(784, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(780, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -254,57 +296,54 @@ namespace hbmenuchanger
             this.toolStripButton2.Text = "github";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
-            // toolStripButton4
+            // pictureBox1
             // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButton4.Text = "toolStripButton4";
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(77, 314);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(613, 605);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
             // 
-            // hmbrewchannelEditorToolStripMenuItem
+            // button1
             // 
-            this.hmbrewchannelEditorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.charUIToolStripMenuItem});
-            this.hmbrewchannelEditorToolStripMenuItem.Name = "hmbrewchannelEditorToolStripMenuItem";
-            this.hmbrewchannelEditorToolStripMenuItem.Size = new System.Drawing.Size(198, 22);
-            this.hmbrewchannelEditorToolStripMenuItem.Text = "hmbrewchannel editor";
-            // 
-            // charUIToolStripMenuItem
-            // 
-            this.charUIToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.paypalmekermit00ToolStripMenuItem});
-            this.charUIToolStripMenuItem.Name = "charUIToolStripMenuItem";
-            this.charUIToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.charUIToolStripMenuItem.Text = "Char(UI)";
-            // 
-            // paypalmekermit00ToolStripMenuItem
-            // 
-            this.paypalmekermit00ToolStripMenuItem.Name = "paypalmekermit00ToolStripMenuItem";
-            this.paypalmekermit00ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.paypalmekermit00ToolStripMenuItem.Text = "paypal.me/kermit00";
-            this.paypalmekermit00ToolStripMenuItem.Click += new System.EventHandler(this.paypalmekermit00ToolStripMenuItem_Click);
+            this.button1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Location = new System.Drawing.Point(607, 101);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(161, 81);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Don\'t have the HBthemepck? or the menu changer files? click here!";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(784, 761);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(780, 957);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.HelpButton = true;
-            this.MaximumSize = new System.Drawing.Size(800, 800);
-            this.MinimumSize = new System.Drawing.Size(800, 800);
+            this.MaximumSize = new System.Drawing.Size(800, 1000);
+            this.MinimumSize = new System.Drawing.Size(800, 1000);
             this.Name = "Form1";
             this.Text = "hmbrew channel editor";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -320,7 +359,6 @@ namespace hbmenuchanger
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.ToolStripMenuItem switchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sdsetupcomToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem switchHmbrewGuideToolStripMenuItem;
@@ -339,6 +377,10 @@ namespace hbmenuchanger
         private System.Windows.Forms.ToolStripMenuItem hmbrewchannelEditorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem charUIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem paypalmekermit00ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hACTOOLToolStripMenuItem;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem tHEMEPAKMENUFilesToolStripMenuItem;
+        private System.Windows.Forms.Button button1;
     }
 }
 
