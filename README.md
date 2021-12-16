@@ -13,6 +13,13 @@
  'install homebrew for you/ set up your micro SD
  . help you make rom hacks 
  
+ example : 
+ icon 
+ ![image](https://user-images.githubusercontent.com/63970461/146410957-01f8048d-84b3-41bc-80d6-c5b02f4bdc6b.png)
+
+ menu back ground 
+ ![image](https://user-images.githubusercontent.com/63970461/146410843-72b94fbd-948c-4d92-ab83-6dc8e82a856c.png)
+
  Included besides the menu changer are the following:
  links to a great  emulator for switch 
  Ways to support not only myself but the people who made all of this possible!
