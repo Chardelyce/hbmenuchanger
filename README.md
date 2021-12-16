@@ -19,6 +19,9 @@
  Forums you can go to for help 
  As well as links to the switchbrew wiki, switch sd set up and more ! 
  
+ Need help or questions about the tool? reach me here :)
+ https://gbatemp.net/threads/homebrew-menu-changer-tool.604618/
+ 
  The orginal tutorial was made in  correspondce with Mikefor20 (Mayfor20) with help from the devs:
  
  TheAlexBarney for Hactoolnet, 
