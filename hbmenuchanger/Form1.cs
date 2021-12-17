@@ -19,8 +19,8 @@ namespace hbmenuchanger
         public Form1()
         {
             InitializeComponent();
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"D:\hbmenuchanger\hbmenuchanger\goocean.wav");
-            player.PlayLooping();
+            /*System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"\Downloads\homebrewmenuchngr\goocean.wav");
+            player.PlayLooping();*/
         }
 
         private void toolStripLabel1_Click(object sender, EventArgs e)
@@ -90,7 +90,9 @@ namespace hbmenuchanger
 
             using (OpenFileDialog openFileDialog = new OpenFileDialog())
             {
-                openFileDialog.InitialDirectory = "c:\\";
+
+               
+                /*openFileDialog.InitialDirectory = "c:\\";
                 openFileDialog.FilterIndex = 2;
                 openFileDialog.RestoreDirectory = true;
 
@@ -103,7 +105,7 @@ namespace hbmenuchanger
                     var fileStream = openFileDialog.OpenFile();
 
 
-                }
+                }*/
             }
         }
 
