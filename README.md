@@ -29,7 +29,7 @@
  Need help or questions about the tool? reach me here :)
  https://gbatemp.net/threads/homebrew-menu-changer-tool.604618/
  
- The orginal tutorial was made in  correspondce with Mikefor20 (Mayfor20) with help from the devs:
+ The orginal tutorial was made in  correspondce with Mikefor20 with help from the devs:
  
  TheAlexBarney for Hactoolnet, 
  to the people at reswitched and all the devs for HBMenu., 
