@@ -40,5 +40,6 @@
  
  
  https://www.paypal.com/cgi-bin/webscr?business=chardelycee@gmail.com&cmd=_xclick&currency_code=USD&amount=5.00&item_name=support me here!
- 
+
+ update: reworking to be a homebrew application 
  
