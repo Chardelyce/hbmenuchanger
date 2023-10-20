@@ -11,9 +11,9 @@
  
  -What it does not do 
  'install homebrew for you/ set up your micro SD
- . help you make rom hacks 
+ . help you make rom hacks
  
- example : 
+ examples : 
  icon 
  ![image](https://user-images.githubusercontent.com/63970461/146410957-01f8048d-84b3-41bc-80d6-c5b02f4bdc6b.png)
 
