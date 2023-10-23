@@ -1,5 +1,5 @@
 
- Presenting the homebrew menu changer!!! 
+ Presenting the homebrew menu changer!
  
  ![image](https://user-images.githubusercontent.com/63970461/146280707-103f0d66-18ec-43cc-b986-6649626aad60.png)
 
