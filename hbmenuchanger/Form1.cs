@@ -16,12 +16,24 @@ namespace hbmenuchanger
     public partial class Form1 : Form
     {
         
-        public Form1()
-        {
-            InitializeComponent();
-            /*System.Media.SoundPlayer player = new System.Media.SoundPlayer(@"\Downloads\homebrewmenuchngr\goocean.wav");
-            player.PlayLooping();*/
-        }
+      public Form1()
+{
+    InitializeComponent();
+    
+     string soundFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "gocean.wav");
+
+    
+    if (File.Exists(soundFilePath))
+    {
+        System.Media.SoundPlayer player = new System.Media.SoundPlayer(soundFilePath);
+        player.PlayLooping();
+    }
+    else
+    {
+        MessageBox.Show("The sound file 'gocean.wav' is missing or in the wrong location.");
+    }
+}
+
 
         private void toolStripLabel1_Click(object sender, EventArgs e)
         {
